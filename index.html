@@ -15,10 +15,10 @@
         <h1>Hi! I'm Azime.</h1>
           <nav>
             <ul>
-                <li class="hidden-link"> <a href="#about-me">About Me</a></li>
-                <li class="hidden-link"> <a href="#projects">Projects</a></li>
-                <li class="hidden-link"> <a href="#resume">Resume</a></li>
-                <li class="hidden-link"> <a href="#contact">Get in touch</a></li>
+                <li> <a class="hidden-link" href="#about-me">About Me</a></li>
+                <li> <a class="hidden-link" href="#projects">Projects</a></li>
+                <li> <a class="hidden-link" href="#resume">Resume</a></li>
+                <li> <a class="hidden-link" href="#contact">Get in touch</a></li>
             </ul>
         </nav>
     </header>
@@ -26,41 +26,124 @@
     <div class="line-break"><br></div>
 
     <section id="about-me" class="main-sections">
-        <h2>About Me</h2>
+        <h2><img class="recent-photo" src="./assets/images/recent-photo.png" alt="photo of Azime"> About Me</h2>
         <p>My name is Azime Nail. I'm Turkish-American.<br> I have a Bachelor's Degree in Psychology. I have coded programs for experiments during college.<br>I also had a career in teaching ESL in Turkey. I was the go to person for any problems, whether it be a tehcnical issue or they are just in need of a helping hand.</p>
         <p>Would you like to know more about me?</p>
-        <button type="button" class="click-yes">Yes!</button>
+        <!-- when you click 'yes', it takes you to the contact section -->
+        <a href="#contact"><button type="button" class="click-yes">Yes!</button></a>
         <button type="button" class="click-no">nope</button>
-        <img class="recent-photo" src="./assets/images/recent-photo.png" alt="photo of Azime">
     </section>
 
     <div class="line-break"><br></div>
 
     <section id="projects" class="main-sections">
         <h2>Projects</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas temporibus eveniet similique officiis earum deleniti sed possimus corporis? Doloribus velit reiciendis et perferendis eius, ipsum error. Dolore, enim impedit?
-            Laudantium soluta magnam consectetur quaerat recusandae perferendis architecto nostrum expedita veniam adipisci quam, animi ut maxime repellendus. Aliquam vel delectus ut, exercitationem alias adipisci porro obcaecati vitae, ducimus deleniti labore!
-            Porro optio sint rerum architecto suscipit, dignissimos rem consequuntur ullam repellendus fuga accusamus quia nemo, cumque modi. Culpa natus magni eaque impedit ab iste, molestias pariatur ipsum ut dolorem. Perferendis.
-            Harum incidunt nisi eos animi facilis vel exercitationem commodi cum vitae tenetur labore dolores quos optio, sequi hic minus rerum omnis aliquam pariatur ab. Optio fugit necessitatibus officia ducimus cum.
-            Sed ducimus at fugiat? Consectetur eos, totam doloribus ullam provident odit ab quasi tempore quis, maxime cum nulla illo velit nesciunt dignissimos fugiat, deleniti hic ducimus dolorem eum alias esse.
-            Vitae fugit consectetur cupiditate pariatur nobis placeat voluptatibus nemo dicta fuga, corporis obcaecati. Id, est fugit velit fugiat amet laborum consectetur voluptates qui quam, porro, quia quis deleniti omnis ratione.
-            Iure error vitae sed aspernatur impedit autem, ab suscipit optio quis nihil qui consequuntur sunt veniam debitis rerum, aperiam, laborum voluptate distinctio voluptatibus. Quidem fugit tenetur beatae dolorum et obcaecati.
-            Nihil officiis, ad assumenda placeat iusto voluptate consequuntur praesentium aperiam, odio, quis molestias? Quis quibusdam quisquam totam optio suscipit ducimus, soluta odio voluptatem architecto laudantium tempora. Eum quibusdam possimus facilis.
-            Aperiam autem molestiae modi, enim repellendus quae, consequatur dignissimos animi, optio quaerat omnis itaque ab sapiente maiores! Eum harum iusto dolores eaque doloribus, veritatis nesciunt autem quam iste suscipit ratione?
-            Labore eaque corrupti laboriosam nemo quia ipsa repellendus sed ea eum cupiditate id aperiam, quidem dolore eius consequuntur ratione veritatis ullam eligendi earum, qui suscipit voluptates quos possimus. Voluptatem, alias?</p>
+
+        <section>
+
+            <div class="new-project">
+              <section>
+                <h3>My Portfolio</h3>
+                <p>This is my most recent project. I think you will see that it looks very familiar. &#x1F601 You can find all of my current and previous project, my resume, and a little bit about me on this page. You can also contact me through this page.</p>
+                <!-- this link will basically refresh the page because this is my most recent project. please clik on the other projects too -->
+                <a href="https://azimezn.github.io/azime-nail-portfolio/"><img class="project-screenshots" src="./assets/images/azime-nail-portfolio-screenshot.png" alt="screenshot of Azime Nail's portfolio"></a>
+              </section>
+            </div>
+
+            <!-- the latest project is separated because it will appear first and bigger. the rest will be a grid under it. -->
+            <section class="grid">
+                <div class="old-project">
+                    <section>
+                        <h3>Nailler.com</h3>
+                        <p>A webpage for a company called Nailler, which has classic cars as rentals. This page is a catalog for their cars and work. You can also get in contact with them through the website or click on their social media links.</p>
+                        <!-- when clicked, it will take you to the website/project -->
+                        <a href="https://www.nailler.com/"><img class="project-screenshots" src="./assets/images/nailler-screenshot.png" alt="screenshot of nailler.com"></a>
+                    </section>
+                </div>
+      
+                <div class="old-project">
+                    <section>
+                        <h3>ZayaDesign.com</h3>
+                        <p>A webpage for a company called Zaya Design. They make decorations and gifts for special occasions. All of their items are handmade. &#x1F4AB</p>
+                        <a href="https://www.zayadesign.com/en"><img class="project-screenshots" src="./assets/images/zayadesign-screenshot.png" alt="screenshot of zayadesign.com"></a>
+                    </section>
+                </div>
+            </section>
+
+        </section>
+        
     </section>
 
+    <!-- added a line break between sections -->
     <div class="line-break"><br></div>
 
     <section id="resume" class="main-sections">
         <h2>Resume</h2>
-        <p>www.linkedin.com/in/azime-nail</p>
+        <p><a href="https://www.linkedin.com/in/azime-nail/">LinkedIn</a></p>
+
+        <!-- <h3>Experience</h3>
+        <div class="grid resume-section">
+
+            <section class="resume-box">
+                <p><b>Gi Group</b></p>
+                <p><i>Native English Teacher</i></p>
+                <p>April 2019 - July 2019 (4 months)</p>
+                <p>Bursa, Turkey</p>
+            </section>
+
+            <section class="resume-box">
+                <p><b>Wall Street English</b></p>
+                <p><i>Native Teacher</i></p>
+                <p>June 2017 - June 2018 (1 year 1 month)</p>
+                <p>Bursa, Turkey</p>
+            </section>
+
+            <section class="resume-box">
+                <p><b>Social Psychology Lab.</b></p>
+                <p><i>Research Assistant</i></p>
+                <p>May 2014 - June 2016 (2 years 2 months)</p>
+                <p>Ankara, Turkey</p>
+            </section>
+
+            <section class="resume-box">
+                <p><b>Hacettepe University Psychometrics Research and Application Center (HUPAM)</b></p>
+                <p><i>Research Intern</i></p>
+                <p>March 2015 - December 2015 (10 months)</p>
+                <p>Ankara, Turkey</p>
+            </section>
+
+            <section class="resume-box">
+                <p><b>Pennsauken Library</b></p>
+                <p><i>Library Assistant</i></p>
+                <p>April 2012 - June 2012 (3 months)</p>
+                <p>New Jersey, USA</p>
+            </section>
+        </div>
+
+        <h3>Education</h3>
+        <div class="grid resume-section">
+
+            <section class="resume-box">
+                <p><b>Hacettepe University</b></p>
+                <p><i>Bachelor's Degree. Psychology</i></p>
+                <p>2012-2016</p>
+            </section>
+
+            <section class="resume-box">
+                <p><b>Pennsauken High School</b></p>
+                <p><i>High School Diploma</i></p>
+                <p>2009-2012</p>
+            </section>
+
+        </div> -->
+
     </section>
 
     <div class="line-break"><br></div>
 
     <section id="contact" class="main-sections">
         <h2>Get in touch!</h2>
+        <!-- form to enter ontact information -->
         <form>
             <p>
                 <label for="username">Name:</label>
@@ -78,6 +161,7 @@
                 <button>Submit</button>
             </p>
         </form>
+        <!-- links to reach me -->
         <aside class="info">
             <p>E-mail: <a href="mailto:azimeznail@gmail.com">azimeznail@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/azimezn">https://github.com/azimezn</a></p>

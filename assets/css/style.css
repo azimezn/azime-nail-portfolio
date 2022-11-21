@@ -10,12 +10,13 @@ body {
 
 header {
     padding: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    /* using a banner as a background image */
     background-image: url("../images/header-cartoon-lavender.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
 }
 
 header h1 {
@@ -42,8 +43,9 @@ header nav ul {
     position: absolute;
     bottom: 5px;
     right: 20px;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 0 0 3px white;
 }
+
 
 /* unvisited link */
 .hidden-link:link {
@@ -77,33 +79,120 @@ header nav ul {
     margin: 10px;
 }
 
+.recent-photo {
+    float: right;
+    width: 20%;
+    min-width: 100px;
+    max-width: 150px;
+    border: 5px;
+    border-style: solid;
+    border-color: var(--purple-dark);
+}
+
+/* note appears when yes is clicked */
+.click-yes:active::after {
+    content: " --- go to the 'Get in touch' part!";
+}
+
+/* sad face appears when no is clicked */
 .click-no:active::after {
     content: "\1F61E";
 }
 
-/* note appears when no is clicked */
-.click-yes:active::after {
-    content: "   go to the 'Get in touch' part!";
+/* create our main grid with flexbox */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-around;
 }
 
-/* sad face appears when no is clicked */
-.click-no:active {
-    content: "\1F61E";
+.project-screenshots {
+    width: 100%;
+    border: 5px solid var(--purple-light);
+    border-radius: 10px;
+}
+
+/* picture border changes color when mouse over link */
+.project-screenshots:hover {
+    border-color: lightblue;
+}
+
+/* some properties are the same for all projects, but the new project needs to stand out */
+.new-project,
+.old-project {
+    padding: 5px;
+    border: 5px dotted var(--purple-dark);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.new-project {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.old-project {
+    width: 30%;
+}
+
+.resume-section {
+    background-color: var(--purple-light);
+    border-radius: 10px;
+    border: 5px solid var(--purple-light);
+}
+
+.resume-box {
+    width: 15%;
+    padding: 0px 10px;
+    border: 3px dotted black;
+    background-color: white;
 }
 
 .info {
-    float:right;
-    padding: 10px 20px;
     background-color: var(--purple-light);
+    float:right;
+    padding: 5px 20px;
+    margin-right: 20px;
+    border: 5px dotted white;
+    width: 20%;
+    height: 100%;
+    word-wrap: break-word;
 }
 
-.recent-photo {
-    position:relative;
-    float: right;
-    width: 180px;
-    top: -165px;
-    padding: 0;
-    border: 5px;
-    border-style: solid;
-    border-color: var(--purple-dark);
+/* responsive design */
+/* I added this special number because of the photo qualities so it doesn't shrink */
+@media screen and (max-width: 1110px) {
+    header{
+        background-size:cover;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .old-project {
+        width: 40%;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .new-project {
+        width: 100%
+    }
+    .old-project {
+        width: 75%;
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        background-color: var(--bg-color);
+    }
+    .new-project,
+    .old-project {
+        word-wrap: break-word;
+    }
 }
