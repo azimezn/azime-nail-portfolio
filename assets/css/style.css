@@ -112,7 +112,7 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: stretch;
+    align-content: stretch;  
 }
 
 .project-screenshots {
@@ -185,11 +185,13 @@ header nav ul {
 }
 
 .education {
-    width: 300px;
+    width: 500px;
+    min width: 300px;
 }
 
 .experience {
-    width: 500px;
+    width: 800px;
+    min width: 500px;
 }
 
 /* .experience .resume-box {
